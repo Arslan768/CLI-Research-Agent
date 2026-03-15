@@ -1,0 +1,16 @@
+{
+  "web_search_success": {
+    "answer": "The 2008 financial crisis was caused by the collapse of the U.S. housing bubble.",
+    "results": [
+      {
+        "title": "2008 Financial Crisis Overview",
+        "url": "https://example.com/2008-crisis",
+        "content": "The crisis was triggered by a combination of factors including subprime mortgage lending, complex financial instruments, and inadequate regulation."
+      }
+    ]
+  },
+  "web_search_empty": {
+    "answer": null,
+    "results": []
+  }
+}
