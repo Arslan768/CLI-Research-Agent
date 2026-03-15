@@ -37,6 +37,11 @@ TOOL_SCHEMAS = [
                     "type": "string",
                     "description": "The search query. Be specific for better results.",
                 },
+                "max_results": {
+                    "type": "integer",
+                    "description": "Number of results to return. Default 5, max 10.",
+                    "default": 5,
+                },
             },
             "required": ["query"],
         },
@@ -54,6 +59,11 @@ TOOL_SCHEMAS = [
                 "topic": {
                     "type": "string",
                     "description": "The topic name to look up on Wikipedia.",
+                },
+                "sentences": {
+                    "type": "integer",
+                    "description": "How many sentences of the summary to return. Default 10.",
+                    "default": 10,
                 },
             },
             "required": ["topic"],
