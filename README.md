@@ -53,7 +53,10 @@ cp .env.example .env
 ```
 
 Get your API keys:
-- **Anthropic**: https://console.anthropic.com
+- **GEMINI API KEY**: https://aistudio.google.com/ 
+
+Select GET API KEY from the left side panel. Proceed with the required steps
+
 - **Tavily** (free tier available): https://tavily.com
 
 ## Usage
