@@ -11,7 +11,7 @@ Built as Project 01 of the [Agentic AI Engineer roadmap](https://github.com/your
 ## Install
 
 ```bash
-git clone https://github.com/yourusername/cli-research-agent
+git clone https://github.com/Arslan768/cli-research-agent
 cd cli-research-agent
 
 # Install uv if you haven't: https://docs.astral.sh/uv/

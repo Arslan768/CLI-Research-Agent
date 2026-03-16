@@ -27,7 +27,7 @@ dev = [
 ]
 
 [project.scripts]
-research = "cli.main:app"
+research = "agent.cli:app"
 
 [tool.ruff]
 line-length = 88
