@@ -1,42 +1,11 @@
 # CLI Research Agent
 
-A terminal-based AI research agent built with Claude + Tavily. Ask any question and watch it reason through multiple web searches, synthesize sources, and return a cited answer — all visible in real time.
+A terminal-based AI research agent built with Gemini + Tavily. Ask any question and watch it reason through multiple web searches, synthesize sources, and return a cited answer — all visible in real time.
 
 Built as Project 01 of the [Agentic AI Engineer roadmap](https://github.com/yourusername).
-
 ## Demo
 
-```
-$ research ask "What caused the 2008 financial crisis?"
-
-╭─ Research Query ──────────────────────────────────────────╮
-│ What caused the 2008 financial crisis?                     │
-╰────────────────────────────────────────────────────────────╯
-
-──────────────────────── step 1 ────────────────────────────
-╭─ Thought ──────────────────────────────────────────────────╮
-│ I'll search for the main causes of the 2008 financial      │
-│ crisis to give a comprehensive answer.                     │
-╰────────────────────────────────────────────────────────────╯
-  > web_search(query='2008 financial crisis main causes')
-╭─ Observation — web_search  [iteration 1] ─────────────────╮
-│ [1] 2008 Crisis Overview — Investopedia                    │
-│ URL: https://investopedia.com/...                          │
-│ The crisis stemmed from the collapse of the housing...     │
-╰────────────────────────────────────────────────────────────╯
-
-──────────────────────── step 2 ────────────────────────────
-╭─ Thought ──────────────────────────────────────────────────╮
-│ I have good information. Let me also check Wikipedia for   │
-│ the regulatory background.                                 │
-╰────────────────────────────────────────────────────────────╯
-  > wikipedia_search(topic='2007–2008 financial crisis')
-
-──────────────────────── Answer ────────────────────────────
-
-## The 2008 Financial Crisis: Causes
-
-The 2008 crisis resulted from several interconnected factors...
+![Demo](CLI-Research-Agent.gif)
 ```
 
 ## Install
@@ -88,7 +57,7 @@ src/agent/
     └── url_reader.py # Full page text extraction
 ```
 
-The loop in `agent.py` is ~40 lines. The core idea: build a `messages` list, call Claude with tool schemas, execute any tool calls, append results, repeat until `stop_reason == "end_turn"`.
+The loop in `agent.py` is ~40 lines. The core idea: build a `messages` list, call Gemini with tool schemas, execute any tool calls, append results, repeat until `stop_reason == "end_turn"`.
 
 ## Run tests
 

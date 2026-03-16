@@ -27,7 +27,7 @@ from agent.streaming import print_query, print_error
 
 app = typer.Typer(
     name="research",
-    help="A ReAct-powered CLI research agent using Claude + web search.",
+    help="A ReAct-powered CLI research agent using Gemini + web search.",
     add_completion=False,
 )
 

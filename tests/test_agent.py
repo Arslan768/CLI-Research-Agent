@@ -65,7 +65,7 @@ class TestAgentLoop:
         """Agent calls one tool, gets the result, then gives a final answer."""
         from agent.agent import run
 
-        # Turn 1: Claude decides to search
+        # Turn 1: Gemini decides to search
         turn1 = make_response(
             content=[
                 make_text_block("I'll search for information."),
@@ -74,7 +74,7 @@ class TestAgentLoop:
             stop_reason="tool_use",
         )
 
-        # Turn 2: Claude synthesizes and answers
+        # Turn 2: Gemini synthesizes and answers
         turn2 = make_response(
             content=[make_text_block("The 2008 crisis was caused by subprime mortgages and deregulation.")],
             stop_reason="end_turn",
